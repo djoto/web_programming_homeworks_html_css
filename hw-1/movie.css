@@ -1,0 +1,134 @@
+body {
+    background-image: url("images/background.png");
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24pt;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 3px 3px #999999;
+}
+.sadrzaj_flex {
+    display: flex;
+    flex-direction: column;
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+    box-shadow: 5px 5px 5px grey;
+}
+.flex_without_footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #EEEEEE;
+    width: 100%
+}
+
+.lijevi {
+    width: 70%;
+}
+@media only screen and (max-width: 992px) {
+    .lijevi {
+      width: 65%;
+    }
+  }
+
+.green_header {
+    background-image: url('images/rbg.png');
+    background-repeat: repeat;
+    overflow: auto;
+    margin-bottom: 1rem;
+}
+#fresh {
+    float:left;
+}
+#ocjena {
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+}
+.komentari {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blok_komentar {
+    width: 90%;
+    background-color: #FFFFFF;
+    border: 2px solid #CCCCCC;
+    border-radius: 12px;
+}
+.quotebubble {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13pt;
+    margin: 1em;
+    overflow: auto;
+}
+.quotebubble img {
+    float: left;
+    height: 35px;
+    width: 35px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    vertical-align: top;
+}
+
+
+.kriticar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13pt;
+    width: 90%;
+    margin-bottom: 40px;
+    overflow: auto;
+}
+.kriticar img {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.publication {
+    font-style: italic;
+}
+
+.desni {
+    background-color: #A2B964;
+    width: 30%;
+}
+@media only screen and (max-width: 992px) {
+    .desni {
+      width: 35%;
+    }
+  }
+
+#naslovna_slika {
+    width: 100%;
+}
+dl {
+    margin-top: -15px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+}
+dt {
+    padding-top: 15px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    background-color: #A2B964;
+    text-align: center;
+    padding: 0.5em;
+}
+
+#w3c {
+    float: right;
+}
+

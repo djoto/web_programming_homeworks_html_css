@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<!--
+	Domaci 2 (PIA 2020)
+	-->
+
+<head>
+    <title>PIA HW - Pizzeria</title>
+    <meta name="author" content="Ђорђе Гачић" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Responsive/Bootstrap homework assignment." />
+    <meta name="keywords" content="pia, web programming, html, css, bootstrap" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="pizzeria.css">
+</head>
+<body>
+  <!-- NASLOVNA SLIKA -->
+  <div class="container p-0" id="header">
+    <img src="images/background.png" id="slika-naslov">
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <div class="container p-0" id="content">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs sticky-top" role="tablist">
+      <li class="nav-item" id="about">
+        <a class="nav-link active" data-toggle="tab" href="#o-nama">О нама</a>
+      </li>
+      <li class="nav-item" id="menu">
+        <a class="nav-link" data-toggle="tab" href="#meni">Мени</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#kontakt">Контакт</a>
+      </li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- SEKCIJA "O NAMA" -->
+      <div id="o-nama" class="container tab-pane active"><br>
+        <h1 class="o-nama-naslov"><img src="images/pizza3.png">О нама <img src="images/pizza3_mirror.png"></h1>
+        <div class="o-nama-tekst">
+          <!-- Tekst je uglevnom preuzet sa stranice picerije IndexPizza -->
+          <p><b>Пицерија Гангула је колектив вриједних и енергичних младих људи који су заслужни за врхунски квалитет 
+          и укус свих наших производа.</b></p>
+          <p>Наш бренд је за кратко вријеме својим квалитетом и врхунском услугом стекао повјерење купаца, 
+          издвојивши се од конкуренције разноврсном понудом.</p>
+          <p>Пицерија Гангула је данас динамичан <i>fastfood</i>, чија је мисија да очува укус традиције и 
+          разновсности, који ће се ширити.</p>
+          <p>Од свог оснивања 2018. године производи из пицерије Гангула се праве од састојака врхунског квалитета, 
+          почевши од специфичног укуса тијеста, меканог и ваздушастог, које је потпуно необично, па до самих свјежих намирница, 
+          који пролазе ригорозну, свакодневну контролу наших стручњака.</p>
+          <p>Број наших различитих производа увијек расте, са циљем да својом иновацијом представимо другачији, бољи и ефикаснији 
+          вид пословања, који се своди на брзу доставу, добру услугу и укус који осваја.</p>
+          <p><b>Адреса:</b><br>Степе Степановића 23а, Београд</p>
+          <p><b>E-mail:</b><br><a href="#">pizzeria.gangula@gmail.com</a></p>
+          <p><b>Телефон:</b><br>061 123 4567</p>
+          <p id="galerija"><b><i>Галерија:</i></b></p>
+        </div>
+        <div class="slike-o-nama">
+          <img id="img-o-nama" class="img-fluid" src="images/pizza4.jpg" alt="Pizza">
+          <img id="img-o-nama" class="img-fluid" src="images/pizza5.jpg" alt="Pizza">
+          <img id="img-o-nama" class="img-fluid" src="images/pizza6.jpg" alt="Pizza">
+          <img id="img-o-nama" class="img-fluid" src="images/pizza7.jpg" alt="Pizza">
+        </div>          
+      </div>
+
+      <!-- SEKCIJA "MENI" -->
+      <div id="meni" class="container tab-pane fade"><br>
+        <h1 class="meni-naslov"><img src="images/pizza3.png">Мени <img src="images/pizza3_mirror.png"></h1>
+        <div class="meni-slike">
+
+          <div class="menu-item"><a class="link-menu-item" data-toggle="modal" data-target="#myModal1">
+            <img src="images/pizza4.jpg" alt="Pizza">
+            <div class="describe-menu-item">
+              <p>MARGHERITA</p>
+            </div>
+            </a>
+            <div class="modal fade" id="myModal1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <div class="modal-title-text">
+                    <h4 class="modal-title"><b><i>MARGHERITA</i></b></h4><br>
+                    <p><b>Састојци:</b> <i>пелат, качкаваљ, оригано, маслине</i></p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <form class="form-left" action="/action_page.php">
+                    <label>Изаберите величину:</label>
+                    <div class="form-check">
+                      <label class="form-check-label" for="radio1">
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>22cm (180 din)
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label" for="radio2">
+                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">33cm (490 din)
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label" for="radio3">
+                        <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">50cm (790 din)
+                      </label>
+                    </div>
+                    </form>
+                    <form class="form-right" action="/action_page.php">
+                      <label for="quantity">Изаберите количину:</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+                    </form>
+                  </div>
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <a href="#">
+                    <button type="button" class="btn btn-success">Наручи</button>
+                    </a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Затвори</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item"><a class="link-menu-item" data-toggle="modal" data-target="#myModal2">
+            <img src="images/pizza8.jpg" alt="Pizza">
+            <div class="describe-menu-item">
+              <p>PIZZA GANGULA</p>
+            </div>
+            </a>
+            <div class="modal fade" id="myModal2">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <div class="modal-title-text">
+                    <h4 class="modal-title"><b><i>PIZZA GANGULA</i></b></h4><br>
+                    <p><b>Састојци:</b> <i>пелат, шунка, качкаваљ, печурке, сланина, печеница, јаје, павлака, 
+                      фефероне, оригано, дуван чварци, маслине</i></p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                      <form class="form-left" action="/action_page.php">
+                      <label>Изаберите величину:</label>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio1">
+                          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>22cm (280 din)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio2">
+                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">33cm (750 din)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio3">
+                          <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">50cm (1150 din)
+                        </label>
+                      </div>
+                      </form>
+                      <form class="form-right" action="/action_page.php">
+                        <label for="quantity">Изаберите количину:</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+                      </form>
+                  </div>
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <a href="#">
+                    <button type="button" class="btn btn-success">Наручи</button>
+                    </a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Затвори</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="menu-item"><a class="link-menu-item" data-toggle="modal" data-target="#myModal3">
+            <img src="images/pizza9.jpg" alt="Pizza">
+            <div class="describe-menu-item">
+              <p>CAPRICCIOSA</p>
+            </div>
+            </a>
+            <div class="modal fade" id="myModal3">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <div class="modal-title-text">
+                    <h4 class="modal-title"><b><i>CAPRICCIOSA</i></b></h4><br>
+                    <p><b>Састојци:</b> <i>пелат, шунка, качкаваљ, печурке, оригано, маслине</i></p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                      <form class="form-left" action="/action_page.php">
+                      <label>Изаберите величину:</label>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio1">
+                          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>22cm (200 din)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio2">
+                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">33cm (590 din)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio3">
+                          <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">50cm (990 din)
+                        </label>
+                      </div>
+                      </form>
+                      <form class="form-right" action="/action_page.php">
+                        <label for="quantity">Изаберите количину:</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+                      </form>
+                  </div>
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <a href="#">
+                    <button type="button" class="btn btn-success">Наручи</button>
+                    </a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Затвори</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="menu-item"><a class="link-menu-item" data-toggle="modal" data-target="#myModal4">
+            <img src="images/pizza10.jpg" alt="Pizza">
+            <div class="describe-menu-item">
+              <p>FUNGHI</p>
+            </div>
+            </a>
+            <div class="modal fade" id="myModal4">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <div class="modal-title-text">
+                    <h4 class="modal-title"><b><i>FUNGHI</i></b></h4><br>
+                    <p><b>Састојци:</b> <i>пелат, качкаваљ, печурке, оригано, маслине</i></p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                      <form class="form-left" action="/action_page.php">
+                      <label>Изаберите величину:</label>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio1">
+                          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>22cm (180 din)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio2">
+                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">33cm (520 din)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio3">
+                          <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">50cm (850 din)
+                        </label>
+                      </div>
+                      </form>
+                      <form class="form-right" action="/action_page.php">
+                        <label for="quantity">Изаберите количину:</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+                      </form>
+                  </div>
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <a href="#">
+                    <button type="button" class="btn btn-success">Наручи</button>
+                    </a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Затвори</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item"><a class="link-menu-item" data-toggle="modal" data-target="#myModal5">
+            <img src="images/pizza11.jpg" alt="Pizza">
+            <div class="describe-menu-item">
+              <p>MEXICANA</p>
+            </div>
+            </a>
+            <div class="modal fade" id="myModal5">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <div class="modal-title-text">
+                    <h4 class="modal-title"><b><i>MEXICANA</i></b></h4><br>
+                    <p><b>Састојци:</b> <i>пелат, качкаваљ, печурке, кулен, павлака, маслине, фефероне, оригано</i></p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                      <form class="form-left" action="/action_page.php">
+                      <label>Изаберите величину:</label>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio1">
+                          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>22cm (250 din)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio2">
+                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">33cm (650 din)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio3">
+                          <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">50cm (1050 din)
+                        </label>
+                      </div>
+                      </form>
+                      <form class="form-right" action="/action_page.php">
+                        <label for="quantity">Изаберите количину:</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+                      </form>
+                  </div>
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <a href="#">
+                    <button type="button" class="btn btn-success">Наручи</button>
+                    </a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Затвори</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item"><a class="link-menu-item" data-toggle="modal" data-target="#myModal6">
+            <img src="images/pizza12.jpg" alt="Pizza">
+            <div class="describe-menu-item">
+              <p>PIZZA PILETINA</p>
+            </div>
+            </a>
+            <div class="modal fade" id="myModal6">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <div class="modal-title-text">
+                    <h4 class="modal-title"><b><i>PIZZA PILETINA</i></b></h4><br>
+                    <p><b>Састојци:</b> <i>пуњене корице, пелат, качкаваљ, пилеће бело, горгонзола, парадајз, рукола, 
+                      пармезан, оригано, маслине</i></p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                      <form class="form-left" action="/action_page.php">
+                      <label>Изаберите величину:</label>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio1">
+                          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>22cm (450 din)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio2">
+                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">33cm (890 din)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio3">
+                          <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">50cm (1490 din)
+                        </label>
+                      </div>
+                      </form>
+                      <form class="form-right" action="/action_page.php">
+                        <label for="quantity">Изаберите количину:</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+                      </form>
+                  </div>
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <a href="#">
+                    <button type="button" class="btn btn-success">Наручи</button>
+                    </a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Затвори</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- SEKCIJA "KONTAKT" -->
+      <div id="kontakt" class="container tab-pane fade"><br>
+        <h1 class="kontakt-naslov"><img src="images/pizza3.png">Контакт <img src="images/pizza3_mirror.png"></h1>
+        <form action="/action_page.php" class="was-validated">
+          <div class="form-group">
+            <label for="name"><b>Име и презиме:</b></label>
+            <input type="text" class="form-control" id="name" placeholder="Унесите име и презиме" name="name" required>
+            <div class="valid-feedback">У реду.</div>
+            <div class="invalid-feedback">Поље је обавезно.</div>
+          </div>
+          <div class="form-group">
+            <label for="email"><b>E-mail:</b></label>
+            <input type="text" class="form-control" id="email" placeholder="Унесите e-mail" name="email" required>
+            <div class="valid-feedback">У реду.</div>
+            <div class="invalid-feedback">Поље је обавезно.</div>
+          </div>
+          <div class="form-group">
+            <label for="tel"><b>Број телефона:</b></label><br>
+            <input type="text" id="tel" placeholder="Унесите број телефона" name="tel">
+            <div class="valid-feedback">Поље је опционо.</div>
+          </div>
+          <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember" required> Слажем се са политиком приватности
+              <div class="valid-feedback">У реду.</div>
+              <div class="invalid-feedback">Означите поље да бисте неставили.</div>
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="comment"><b>Коментар:</b></label>
+            <textarea class="form-control" rows="5" id="comment" name="text" required></textarea>
+            <div class="valid-feedback">У реду.</div>
+            <div class="invalid-feedback">Поље је обавезно.</div>
+          </div>
+          <button type="submit" class="btn btn-primary">Потврди</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container p-0 my-0 bg-dark text-center text-white" id="posjetite-nas">
+    Посјетите нас на друштвеним мрежама:  
+  </div>
+
+  <!-- FOOTER IKONICE ZA DRUSTVENE MREZE -->
+  <div class="container p-0 my-0 bg-dark" id="footer">
+    <div class="row">
+      <div class="col"><a href="#" class="fa fa-facebook"></a></div>
+      <div class="col"><a href="#" class="fa fa-instagram"></a></div>
+      <div class="col"><a href="#" class="fa fa-twitter"></a></div>
+      <div class="col"><a href="#" class="fa fa-google"></a></div>
+      <div class="col"><a href="#" class="fa fa-linkedin"></a></div>
+      <div class="col"><a href="#" class="fa fa-youtube"></a></div>
+      <div class="col"><a href="#" class="fa fa-whatsapp"></a></div>
+    </div>
+  </div>
+
+
+</body>
+</html>

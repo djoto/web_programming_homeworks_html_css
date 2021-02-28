@@ -1,0 +1,300 @@
+body {
+    background-color: #ffff4d;
+    margin: 0;
+    padding: 0;
+}
+#header {
+    margin-top: 1em;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom: 4px solid chocolate;
+}
+#slika-naslov {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+}
+
+#content {
+    background-color: white;
+    border-top: 2px solid chocolate;
+    border-left: 2px solid chocolate;
+    border-right: 2px solid chocolate;
+    border-bottom: 2px solid #292b2c;
+}
+
+.nav {
+    background-color: orange;
+    border-bottom: 2px solid chocolate;
+}
+.nav-item {
+    border-bottom: 1px solid chocolate;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+.nav-link:link {
+    background-color: orange;
+    color: black;
+}
+.nav-link:visited {
+    background-color: orange;
+    color: black;
+  }
+.nav-link:hover {
+    background-color: chocolate;
+    color: black;
+}
+.nav-link:active {
+    background-color: chocolate;
+    color: black;
+}
+.tab-content {
+    background-color: #ffff80;
+}
+@media only screen and (max-width: 700px){
+    .nav-item {
+        width: 33.3%;
+        text-align: center;
+    }
+}
+#about {
+    border-right: 2px solid chocolate;
+}
+#menu {
+    border-right: 2px solid chocolate;
+}
+
+
+/*O NAMA - SADRZAJ*/
+.o-nama-naslov {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.o-nama-naslov img {
+    width: 90px;
+    vertical-align: top;
+}
+@media only screen and (max-width: 700px){
+    .o-nama-naslov {
+        font-size: 40px;
+    }
+    .o-nama-naslov img {
+        width: 60px;
+    }
+}
+.o-nama-tekst{
+    font-size: large;
+    text-align: justify;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+#galerija{
+    text-align: center;
+}
+.slike-o-nama {
+    text-align: center;
+    padding-bottom: 2em;
+}
+#img-o-nama {
+    border-radius: 10%;
+    padding: 15px;
+    width: 450px;
+    height: 300px;
+}
+
+/* MENI - SADRZAJ */
+.meni-naslov {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.meni-naslov img {
+    width: 90px;
+    vertical-align: top;
+}
+@media only screen and (max-width: 700px){
+    .meni-naslov {
+        font-size: 40px;
+    }
+    .meni-naslov img {
+        width: 60px;
+    }
+}
+.meni-slike {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+.menu-item {
+    width: 340px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+    text-align: center;
+    border-radius: 5%;
+    background-color: orange;
+}
+.menu-item img {
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    width: 100%;
+    height: 230px;
+}
+.describe-menu-item {
+    padding-top: 10px;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    font-size: large;
+}
+.link-menu-item:link {
+    color: black;
+}
+.link-menu-item:visited {
+    color: black;
+}
+.link-menu-item:hover {
+    color: black;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.link-menu-item:active {
+    color: black;
+}
+/* MODAL - SREDJIVANJE */
+.modal-content {
+    background-color: #ffff80;
+}
+.modal-title-text {
+    text-align: left;
+}
+.modal-title-text h4 {
+    margin-bottom: -20px;
+}
+.modal-title-text p {
+    margin-bottom: 0;
+}
+.modal-body {
+    display: flex;
+    overflow: auto;
+}
+.form-left {
+    margin: auto;
+    text-align: left;
+}
+.form-right {
+    margin: auto;
+}
+#quantity {
+    width: 50%;
+}
+.modal-footer{
+    display: flex;
+    overflow: auto;
+}
+.modal-footer a {
+    margin: auto;
+    width: 150px;
+}
+.modal-footer button {
+    margin: auto;
+    width: 150px;
+}
+
+
+/* KONTAKT - SADRZAJ */
+.kontakt-naslov {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px #000000;
+    padding-bottom: 15px;
+}
+.kontakt-naslov img {
+    width: 90px;
+    vertical-align: top;
+}
+@media only screen and (max-width: 700px){
+    .kontakt-naslov {
+        font-size: 40px;
+    }
+    .kontakt-naslov img {
+        width: 60px;
+    }
+}
+.was-validated {
+    padding: 2% 5% 5% 5%;
+}
+#tel {
+    width: 100%;
+}
+
+@media only screen and (min-width: 800px){
+    .was-validated {
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+    }
+}
+
+/* FOOTER - DRUSTVENE MREZE*/
+#footer {
+    overflow: auto;
+    border: 2px solid #292b2c;
+    border-top: none;
+}
+.row {
+    margin: auto;
+}
+.col {
+    padding: 0;
+    overflow: auto;
+}
+.fa {
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+}
+.fa:hover {
+    opacity: 0.8;
+    color: white;
+    text-decoration: none;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-instagram {
+    background: #DD2A7B;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+.fa-whatsapp {
+    background: #25D366;
+    color: white;
+}
